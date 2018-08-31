@@ -1,4 +1,6 @@
 ﻿using System;
+using Class.Student;
+using Class.Math;
 
 namespace Class
 {
@@ -6,7 +8,18 @@ namespace Class
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var Jeffrey = new StudentName();
+            Jeffrey.FirstName = "Jeffrey";
+            Jeffrey.LastName = "Chen";
+
+            Jeffrey.Introduce();
+
+
+            var calculator = new Calculator();
+            
+            var result = calculator.Add(1, 2);
+            Console.WriteLine(result);
+            Console.ReadLine();
         }
     }
 }
